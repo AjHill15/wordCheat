@@ -729,23 +729,26 @@
   },
   "packageFolders": {
     "C:\\Users\\hilla\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
+      "projectUniqueName": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
       "projectName": "WordCheater",
-      "projectPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
+      "projectPath": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
       "packagesPath": "C:\\Users\\hilla\\.nuget\\packages\\",
-      "outputPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\obj\\",
+      "outputPath": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\hilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

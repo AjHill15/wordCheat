@@ -37,7 +37,11 @@ namespace WordCheater
 
                 if(word.Length > 1)
                 {
-                    firstNode.addNodes(word.Substring(1));
+                    firstNode.addNodes(word.Substring(1), word);
+                }
+                else
+                {
+                    firstNode.addEndNode(word);
                 }
             }
         }

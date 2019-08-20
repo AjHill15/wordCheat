@@ -17,13 +17,12 @@ namespace WordCheater
                 dictSource = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText("dictionary.json"));
             }
 
-            int dictIndex = 0;
+            Console.WriteLine("starting import");
             foreach (KeyValuePair<string, string> entry in dictSource)
             {
-                dictIndex++;
-                Console.WriteLine(string.Format("Adding word: {0} {1} / {2}", entry.Key, dictIndex, dictSource.Count));
                 tree.addWord(entry.Key);
             }
+            Console.WriteLine("Import complete");
         }
     }
 }

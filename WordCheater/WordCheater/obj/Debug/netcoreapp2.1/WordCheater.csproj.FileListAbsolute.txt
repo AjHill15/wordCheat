@@ -22,3 +22,15 @@ G:\Projects\Programs\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1
 G:\Projects\Programs\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.AssemblyInfo.cs
 G:\Projects\Programs\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.dll
 G:\Projects\Programs\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.pdb
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\dictionary.json
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.deps.json
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.runtimeconfig.json
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.runtimeconfig.dev.json
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.dll
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.pdb
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.csprojAssemblyReference.cache
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.csproj.CoreCompileInputs.cache
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.AssemblyInfoInputs.cache
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.AssemblyInfo.cs
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.dll
+C:\Users\hilla\Projects\Programming\wordCheater\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.pdb

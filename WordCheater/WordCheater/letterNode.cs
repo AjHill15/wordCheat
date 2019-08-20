@@ -4,10 +4,10 @@ using System.Text;
 
 namespace WordCheater
 {
-    class letterNode
+    class letterNode:baseNode
     {
         private string _letter;
-        public List<letterNode> nodes;
+        public List<baseNode> nodes;
 
         public string letter
         {
@@ -24,7 +24,7 @@ namespace WordCheater
         private void buildNewNode(string newLetter)
         {
             _letter = newLetter;
-            nodes = new List<letterNode>();
+            nodes = new List<baseNode>();
         }
 
         public letterNode()
@@ -39,7 +39,7 @@ namespace WordCheater
 
         public letterNode contains(string nextLetter)
         {
-            foreach(var node in nodes)
+            foreach(letterNode node in nodes)
             {
                 if(node.letter == nextLetter)
                 {
@@ -49,7 +49,7 @@ namespace WordCheater
             return null; 
         }
 
-        public void addNodes(string nextLetters)
+        public void addNodes(string nextLetters, string word)
         {
             var nextNode =  this.contains(nextLetters[0].ToString());
 
@@ -63,8 +63,18 @@ namespace WordCheater
 
             if(nextLetters.Length > 1)
             {
-                nextNode.addNodes(nextLetters.Substring(1));
+                nextNode.addNodes(nextLetters.Substring(1), word);
+            }
+            else
+            {
+                nextNode.addEndNode(word);
             }
         }
+
+        public void addEndNode(string word)
+        {
+            nodes.Add(new EndNode(word));
+        }
+
     }
 }
