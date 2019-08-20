@@ -734,11 +734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projects\\Programs\\WordCheater\\WordCheater\\WordCheater.csproj",
+      "projectUniqueName": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
       "projectName": "WordCheater",
-      "projectPath": "G:\\Projects\\Programs\\WordCheater\\WordCheater\\WordCheater.csproj",
+      "projectPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
       "packagesPath": "C:\\Users\\hilla\\.nuget\\packages\\",
-      "outputPath": "G:\\Projects\\Programs\\WordCheater\\WordCheater\\obj\\",
+      "outputPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
