@@ -1,0 +1,12 @@
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\dictionary.json
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.deps.json
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.runtimeconfig.json
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.runtimeconfig.dev.json
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.dll
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.csprojAssemblyReference.cache
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.csproj.CoreCompileInputs.cache
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.AssemblyInfoInputs.cache
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.AssemblyInfo.cs
+G:\Projects\Programs\WordCheater\WordCheater\bin\Debug\netcoreapp2.1\WordCheater.pdb
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.dll
+G:\Projects\Programs\WordCheater\WordCheater\obj\Debug\netcoreapp2.1\WordCheater.pdb
