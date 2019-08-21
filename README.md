@@ -7,4 +7,5 @@ Right now all it does is create a heap from a json dictionary. Next step will be
 
 
 Json Dictionary is from this project: https://github.com/matthewreagan/WebstersEnglishDictionary
+
 Using Newtonsofts Json.NET: https://www.newtonsoft.com/json
