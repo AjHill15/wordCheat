@@ -1,4 +1,4 @@
-# wordCheat
+# wordCheater
 A lookup to cheat at word puzzle games
 
 current status: incomplete
