@@ -23,6 +23,16 @@ namespace WordCheater
                 tree.addWord(entry.Key);
             }
             Console.WriteLine("Import complete");
+
+            Console.WriteLine("Testing word: cat.");
+            if(tree.Contains("cat"))
+            {
+                Console.WriteLine("Contains: cat");
+            }
+            else
+            {
+                Console.WriteLine("Does not contain: cat");
+            }
         }
     }
 }

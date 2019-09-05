@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace WordCheater
@@ -7,7 +8,8 @@ namespace WordCheater
     class letterNode:baseNode
     {
         private string _letter;
-        public List<baseNode> nodes;
+        public List<letterNode> nodes;
+        public EndNode end;
 
         public string letter
         {
@@ -24,7 +26,8 @@ namespace WordCheater
         private void buildNewNode(string newLetter)
         {
             _letter = newLetter;
-            nodes = new List<baseNode>();
+            nodes = new List<letterNode>();
+            end = null;
         }
 
         public letterNode()
@@ -73,7 +76,7 @@ namespace WordCheater
 
         public void addEndNode(string word)
         {
-            nodes.Add(new EndNode(word));
+            end = new EndNode(word);
         }
 
     }
