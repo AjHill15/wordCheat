@@ -3,7 +3,7 @@ A lookup to cheat at word puzzle games
 
 current status: incomplete
 
-Right now all it does is create a heap from a json dictionary. Next step will be making a class to read through the heap based on the letters given to it.
+Right now all it does is create a heap from a json dictionary and can search through that heap to see if it contains the word.
 
 
 Json Dictionary is from this project: https://github.com/matthewreagan/WebstersEnglishDictionary
