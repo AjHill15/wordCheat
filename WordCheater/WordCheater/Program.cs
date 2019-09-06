@@ -18,34 +18,39 @@ namespace WordCheater
             }
 
             Console.WriteLine("***starting import***");
-            foreach (KeyValuePair<string, string> entry in dictSource)
-            {
-                tree.addWord(entry.Key);
-            }
+            importDictionary(tree, dictSource);
             Console.WriteLine("***Import complete***");
 
             Console.WriteLine("***Testing***");
 
             int missingWordCount = 0;
 
-            foreach(KeyValuePair<string,string> entry in dictSource)
+            foreach (KeyValuePair<string, string> entry in dictSource)
             {
-                if(!tree.Contains(entry.Key))
+                if (!tree.Contains(entry.Key))
                 {
                     missingWordCount++;
                     Console.WriteLine(string.Format("Error {0}: Heap does not contain {1}.", missingWordCount, entry.Key));
                 }
             }
 
-            if(missingWordCount > 0)
+            if (missingWordCount > 0)
             {
-                Console.WriteLine(string.Format("ERROR: {0} of {1} words missing from heap.",missingWordCount, dictSource.Count));
+                Console.WriteLine(string.Format("ERROR: {0} of {1} words missing from heap.", missingWordCount, dictSource.Count));
             }
             else
             {
                 Console.WriteLine(string.Format("No errors: all {0} words included.", dictSource.Count));
             }
-
         }
+
+        private static void importDictionary(LetterTree heap, Dictionary<string, string> source)
+        {
+            foreach (KeyValuePair<string, string> entry in source)
+            {
+                heap.addWord(entry.Key);
+            }
+        }
+
     }
 }
