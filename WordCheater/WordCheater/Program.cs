@@ -17,22 +17,35 @@ namespace WordCheater
                 dictSource = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText("dictionary.json"));
             }
 
-            Console.WriteLine("starting import");
+            Console.WriteLine("***starting import***");
             foreach (KeyValuePair<string, string> entry in dictSource)
             {
                 tree.addWord(entry.Key);
             }
-            Console.WriteLine("Import complete");
+            Console.WriteLine("***Import complete***");
 
-            Console.WriteLine("Testing word: cat.");
-            if(tree.Contains("cat"))
+            Console.WriteLine("***Testing***");
+
+            int missingWordCount = 0;
+
+            foreach(KeyValuePair<string,string> entry in dictSource)
             {
-                Console.WriteLine("Contains: cat");
+                if(!tree.Contains(entry.Key))
+                {
+                    missingWordCount++;
+                    Console.WriteLine(string.Format("Error {0}: Heap does not contain {1}.", missingWordCount, entry.Key));
+                }
+            }
+
+            if(missingWordCount > 0)
+            {
+                Console.WriteLine(string.Format("ERROR: {0} of {1} words missing from heap.",missingWordCount, dictSource.Count));
             }
             else
             {
-                Console.WriteLine("Does not contain: cat");
+                Console.WriteLine(string.Format("No errors: all {0} words included.", dictSource.Count));
             }
+
         }
     }
 }
