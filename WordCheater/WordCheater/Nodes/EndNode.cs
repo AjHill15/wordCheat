@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WordCheater
+namespace WordCheater.Nodes
 {
     class EndNode: baseNode
     {

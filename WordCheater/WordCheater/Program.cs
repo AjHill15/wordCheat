@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Generic;
+using WordCheater.Heap;
 
 namespace WordCheater
 {
@@ -11,7 +12,7 @@ namespace WordCheater
         {
             Dictionary<string, string> dictSource;
             List<string> words = new List<string>();
-            LetterTree tree = new LetterTree();
+            LetterHeap tree = new LetterHeap();
             using (StreamReader file = File.OpenText("dictionary.json"))
             {
                 dictSource = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText("dictionary.json"));
@@ -21,7 +22,7 @@ namespace WordCheater
             importDictionary(tree, dictSource);
             Console.WriteLine("***Import complete***");
 
-            Console.WriteLine("***Testing***");
+            Console.WriteLine("***Testing dictionary completeness***");
 
             int missingWordCount = 0;
 
@@ -42,9 +43,27 @@ namespace WordCheater
             {
                 Console.WriteLine(string.Format("No errors: all {0} words included.", dictSource.Count));
             }
+
+            Console.WriteLine("***Testing finding all words***");
+            string testWord = "chocolate";
+            Console.WriteLine(string.Format("Testing word: {0}", testWord));
+            var wordResults = finder.findWords(testWord, tree);
+            if(wordResults.Count > 0)
+            {
+                Console.WriteLine(string.Format("{0} results found!", wordResults.Count));
+                foreach(var result in wordResults)
+                {
+                    Console.WriteLine(result);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No words found.");
+            }
+
         }
 
-        private static void importDictionary(LetterTree heap, Dictionary<string, string> source)
+        private static void importDictionary(LetterHeap heap, Dictionary<string, string> source)
         {
             foreach (KeyValuePair<string, string> entry in source)
             {
