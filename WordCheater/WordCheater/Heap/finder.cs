@@ -54,7 +54,6 @@ namespace WordCheater.Heap
                 }
             }
             var filteredList = wordHash.ToList<string>();
-            filteredList.Sort();
             return filteredList;
         }
     }
