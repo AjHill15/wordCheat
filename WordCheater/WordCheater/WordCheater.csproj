@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WordFinder\WordFinder.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="dictionary.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

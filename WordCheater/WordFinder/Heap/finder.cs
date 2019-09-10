@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace WordCheater.Heap
+namespace WordFinder.Heap
 {
-    static class finder
+    public static class finder
     {
         public static List<string> findWords(string leters, LetterHeap heap)
         {

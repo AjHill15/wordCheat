@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Generic;
-using WordCheater.Heap;
+using WordFinder.Heap;
 
 namespace WordCheater
 {

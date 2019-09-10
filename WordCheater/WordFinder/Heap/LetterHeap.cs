@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using WordCheater.Nodes;
+using WordFinder.Nodes;
 
-namespace WordCheater.Heap
+namespace WordFinder.Heap
 {
-    class LetterHeap
+    public class LetterHeap
     {
 
         private List<letterNode> topLevelNodes;
