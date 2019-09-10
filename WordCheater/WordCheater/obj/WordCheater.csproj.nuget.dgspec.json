@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj": {}
+    "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj": {
+    "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
+        "projectUniqueName": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
         "projectName": "WordCheater",
-        "projectPath": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
+        "projectPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\WordCheater.csproj",
         "packagesPath": "C:\\Users\\hilla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilla\\Projects\\Programming\\wordCheater\\WordCheater\\WordCheater\\obj\\",
+        "outputPath": "G:\\Projects\\Programs\\wordCheater\\WordCheater\\WordCheater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

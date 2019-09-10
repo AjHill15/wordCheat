@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace WordCheater.Heap
 {
@@ -44,17 +45,15 @@ namespace WordCheater.Heap
 
         private static List<string> filterList(List<string> sourceList)
         {
-            var filteredList = new List<string>();
+            var wordHash = new HashSet<string>();
             foreach(var word in sourceList)
             {
                 if (!string.IsNullOrWhiteSpace(word))
                 {
-                    if (filteredList.IndexOf(word) == -1)
-                    {
-                        filteredList.Add(word);
-                    }
+                    wordHash.Add(word);
                 }
             }
+            var filteredList = wordHash.ToList<string>();
             filteredList.Sort();
             return filteredList;
         }
