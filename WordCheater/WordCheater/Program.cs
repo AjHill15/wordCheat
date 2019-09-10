@@ -45,7 +45,8 @@ namespace WordCheater
             }
 
             Console.WriteLine("***Testing finding all words***");
-            string testWord = "chocolate";
+            Console.Write("Enter letters you wish to test: ");
+            string testWord = Console.ReadLine();
             Console.WriteLine(string.Format("Testing word: {0}", testWord));
             var wordResults = finder.findWords(testWord, tree);
             if(wordResults.Count > 0)
