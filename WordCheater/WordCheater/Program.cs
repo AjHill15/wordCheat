@@ -22,27 +22,27 @@ namespace WordCheater
             importDictionary(tree, dictSource);
             Console.WriteLine("***Import complete***");
 
-            Console.WriteLine("***Testing dictionary completeness***");
+            //Console.WriteLine("***Testing dictionary completeness***");
 
-            int missingWordCount = 0;
+            //int missingWordCount = 0;
 
-            foreach (KeyValuePair<string, string> entry in dictSource)
-            {
-                if (!tree.Contains(entry.Key))
-                {
-                    missingWordCount++;
-                    Console.WriteLine(string.Format("Error {0}: Heap does not contain {1}.", missingWordCount, entry.Key));
-                }
-            }
+            //foreach (KeyValuePair<string, string> entry in dictSource)
+            //{
+            //    if (!tree.Contains(entry.Key))
+            //    {
+            //        missingWordCount++;
+            //        Console.WriteLine(string.Format("Error {0}: Heap does not contain {1}.", missingWordCount, entry.Key));
+            //    }
+            //}
 
-            if (missingWordCount > 0)
-            {
-                Console.WriteLine(string.Format("ERROR: {0} of {1} words missing from heap.", missingWordCount, dictSource.Count));
-            }
-            else
-            {
-                Console.WriteLine(string.Format("No errors: all {0} words included.", dictSource.Count));
-            }
+            //if (missingWordCount > 0)
+            //{
+            //    Console.WriteLine(string.Format("ERROR: {0} of {1} words missing from heap.", missingWordCount, dictSource.Count));
+            //}
+            //else
+            //{
+            //    Console.WriteLine(string.Format("No errors: all {0} words included.", dictSource.Count));
+            //}
 
             Console.WriteLine("***Testing finding all words***");
             Console.Write("Enter letters you wish to test: ");

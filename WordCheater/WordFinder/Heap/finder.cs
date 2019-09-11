@@ -7,7 +7,33 @@ namespace WordFinder.Heap
 {
     public static class finder
     {
-        public static List<string> findWords(string leters, LetterHeap heap)
+
+        public static List<string> findWords(string letters, LetterHeap heap)
+        {
+            List<string> goodResults = new List<string> { string.Empty};
+            foreach(var letter in letters)
+            {
+                var newCombinations = new List<string>();
+                foreach(var perm in goodResults)
+                {
+                   for(var i = 0; i <= perm.Length; i++)
+                    {
+                        newCombinations.Add(
+                            perm.Substring(0, i) +
+                            letter +
+                            perm.Substring(i));
+                    }
+                }
+                foreach(var combo in newCombinations)
+                {
+                    if (heap.Contains(combo))
+                        goodResults.Add(combo);
+                }
+            }
+            return goodResults;
+        }
+
+        public static List<string> findWordsOld(string leters, LetterHeap heap)
         {
             List<string> output = new List<string>();
             var possibleWords = getPermutations(leters);
