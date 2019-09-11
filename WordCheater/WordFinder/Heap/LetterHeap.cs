@@ -26,7 +26,7 @@ namespace WordFinder.Heap
 
         public LetterHeap()
         {
-            constructor(dictionaryMode.heap);
+            constructor(dictionaryMode.dictionary);
         }
 
         public LetterHeap(dictionaryMode runMode)
