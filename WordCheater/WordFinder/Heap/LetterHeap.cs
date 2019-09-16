@@ -24,15 +24,23 @@ namespace WordFinder.Heap
             }
         }
 
+        public List<string> dictionary
+        {
+            get
+            {
+                return fullDictionary.Keys.ToList<string>();
+            }
+        }
+
         public LetterHeap()
         {
             constructor(dictionaryMode.dictionary);
         }
 
-        public LetterHeap(dictionaryMode runMode)
-        {
-            constructor(runMode);
-        }
+        //public LetterHeap(dictionaryMode runMode)
+        //{
+        //    constructor(runMode);
+        //}
 
         private void constructor(dictionaryMode runMode)
         {

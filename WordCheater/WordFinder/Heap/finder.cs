@@ -10,77 +10,44 @@ namespace WordFinder.Heap
 
         public static List<string> findWords(string letters, LetterHeap heap)
         {
-            List<string> goodResults = new List<string> { string.Empty};
-            foreach(var letter in letters)
+            var possibleWords = heap.dictionary;
+            var goodWords = new List<string>();
+
+            foreach(var word in possibleWords)
             {
-                var newCombinations = new List<string>();
-                foreach(var perm in goodResults)
-                {
-                   for(var i = 0; i <= perm.Length; i++)
-                    {
-                        newCombinations.Add(
-                            perm.Substring(0, i) +
-                            letter +
-                            perm.Substring(i));
-                    }
-                }
-                foreach(var combo in newCombinations)
-                {
-                    if (heap.Contains(combo))
-                        goodResults.Add(combo);
-                }
+                //tests
+                if (word.Length > letters.Length)
+                    continue;
+                //if (!containsAllLetters(letters, word))
+                //    continue;
+                if (!containsNoOtherLetters(letters, word))
+                    continue;
+                //if you get this far you past all the test, add word to output.
+                goodWords.Add(word);
             }
-            return goodResults;
+
+            return goodWords;
         }
 
-        public static List<string> findWordsOld(string leters, LetterHeap heap)
+        private static bool containsAllLetters(string letters, string word)
         {
-            List<string> output = new List<string>();
-            var possibleWords = getPermutations(leters);
-            foreach (var word in possibleWords)
+            for(int i = 0; i < letters.Length; i++)
             {
-                if (heap.Contains(word))
-                {
-                    output.Add(word);
-                }
+                if (!word.Contains(letters[i]))
+                    return false;
             }
-            output.Sort();
-            return output;
+            return true; 
         }
 
-        private static List<string> getPermutations(string letters)
+        private static bool containsNoOtherLetters(string letters, string word)
         {
-            List<string> combinations = new List<string> { string.Empty };
-            foreach(var letter in letters)
+            for(int i = 0; i < word.Length; i++)
             {
-                var newCombinations = new List<string>();
-                foreach(var combination in combinations)
-                {
-                    for(var i = 0; i <= combination.Length; i++)
-                    {
-                        newCombinations.Add(
-                            combination.Substring(0, i) +
-                            letter +
-                            combination.Substring(i));
-                    }
-                }
-                combinations.AddRange(newCombinations);
+                if (!letters.Contains(word[i]))
+                    return false;
             }
-            return filterList(combinations);
+            return true;
         }
 
-        private static List<string> filterList(List<string> sourceList)
-        {
-            var wordHash = new HashSet<string>();
-            foreach(var word in sourceList)
-            {
-                if (!string.IsNullOrWhiteSpace(word))
-                {
-                    wordHash.Add(word);
-                }
-            }
-            var filteredList = wordHash.ToList<string>();
-            return filteredList;
-        }
     }
 }
